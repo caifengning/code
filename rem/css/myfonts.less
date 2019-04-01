@@ -1,0 +1,17 @@
+/*自定义字体*/
+@font-face {
+    font-family: 'wjs';
+    src: url('./fonts/icomoon.eot'); /* IE9*/
+    src: url('./fonts/icomoon.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url('./fonts/icomoon.woff') format('woff'), /* chrome、firefox */
+    url('./fonts/icomoon.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('./fonts/icomoon.svg') format('svg'); /* iOS 4.1- */
+}
+/*自定义字体使用样式*/
+.wjs_icon{
+    font-family: wjs;
+}
+
+.wjs_icon_add::before{
+    content: "\e900";
+}

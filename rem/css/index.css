@@ -1,0 +1,116 @@
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 18.75px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 20.6px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 20.7px;
+  }
+}
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 32px;
+  }
+}
+body,
+ul,
+dd,
+p,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #f7f4f1;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.viewport {
+  max-width: 640px;
+  margin: 0 auto;
+}
+/*自定义字体*/
+@font-face {
+  font-family: 'wjs';
+  src: url('fonts/icomoon.eot');
+  /* IE9*/
+  src: url('fonts/icomoon.eot') format('embedded-opentype'), /* IE6-IE8 */ url('fonts/icomoon.woff') format('woff'), /* chrome、firefox */ url('fonts/icomoon.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('fonts/icomoon.svg') format('svg');
+  /* iOS 4.1- */
+}
+/*自定义字体使用样式*/
+.wjs_icon {
+  font-family: wjs;
+}
+.wjs_icon_add::before {
+  content: "\e900";
+}
+.layout {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.layout .header > img {
+  width: 100%;
+  display: block;
+}
+.layout .items {
+  padding: 0px 0.75rem;
+}
+.layout .items > .item .title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  margin: 0.78125rem 0;
+}
+.layout .items > .item .title > span:nth-of-type(1) {
+  color: #000;
+}
+.layout .items > .item .title > span:nth-of-type(2) {
+  color: #888;
+}
+.layout .items > .item .content {
+  border: 0.09375rem #dedede dashed;
+  height: 7.0625rem;
+  background-color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 1.125rem;
+}
+.layout .items > .item .content > span {
+  font-size: 3.25rem;
+  color: #aeaeae;
+}
+.layout .items > .item .content > div {
+  font-size: 0.8125rem;
+  color: #aeaeae;
+  margin-top: 0.4375rem;
+}
